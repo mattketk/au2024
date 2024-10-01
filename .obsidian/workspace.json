@@ -1,0 +1,162 @@
+{
+  "main": {
+    "id": "db7b56485410f25b",
+    "type": "split",
+    "children": [
+      {
+        "id": "6359be0deef8b07b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "691ef70368ec8d7b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "phys-220/notes/lagrangians.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c817afe62c5eb911",
+    "type": "split",
+    "children": [
+      {
+        "id": "0da99053bfbbf0cf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0835db8822e84ec0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6f500bb08712fd7c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "411423fb8725ed65",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5d26696f4a44e6aa",
+    "type": "split",
+    "children": [
+      {
+        "id": "82191d40617b86ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "80bccfa04d351f85",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "phys-220/notes/lagrangians.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1d3d7bff15121eeb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "phys-220/notes/lagrangians.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "20ef817b00ebd22f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "7b31e20e4a82ac0f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "phys-220/notes/lagrangians.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "691ef70368ec8d7b",
+  "lastOpenFiles": [
+    "phys-220/xopp/lecture-2.xopp~",
+    "phys-220/xopp/homework-1.xopp~",
+    "phys-220/notes/functionals.md",
+    "phys-220/notes/noether-theorem.md",
+    "phys-220/homework/Physics220_hw1-discussion.xopp~",
+    "phys-220/notes/symmetries.md",
+    "phys-220/notes/conservation-laws.md",
+    "phys-220/notes/lagrangians.md",
+    "phys-220/xopp/lecture-1.xopp~",
+    "phys-220/notes"
+  ]
+}
