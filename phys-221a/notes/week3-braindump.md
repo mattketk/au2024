@@ -8,6 +8,7 @@
 	- A collection of identically prepared physical systems characterized by the same ket $\ket{\alpha}$ aka a **pure ensemble**
 		- ex. output through a Stern-Gerlach type measurement
 	- **Mixed ensembles** consist of certain fraction
+	- Ensemble average $$\left[ A \right] = \sum_{i} w_{i} \bra{\alpha^{(i)}} \hat{A} \ket{\alpha^{(i)}} = \sum_{i} \sum_{a^\prime} w_{i} \left| \bra{a^\prime} \ket{\alpha^{(i)}}    \right|^2 a^\prime $$
 - Coupled and uncoupled states
 	- Coupled notation $$\hat{H_{1}} \otimes \hat{H}_{2}$$
 		- $$\ket{a,b} = \ket{a} \otimes \ket{b} $$
