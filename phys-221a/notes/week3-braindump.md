@@ -3,7 +3,11 @@
 - Spin Hamiltonian $$\hat{H}= -\left( \frac{e}{m_{e}c} \right) \mathbf{S}\cdot \mathbf{B}=\omega \hat{S}_{z}$$
 - Consider the relation $$\hat{U} = \sum_{r} \ket{b^{(r)}} \bra{a^{(r)}} $$ as an element-wise representation of mapping element-wise input to output
 - Mixed and pure states?
+	- see mixed and pure ensembles
 - Ensembles?
+	- A collection of identically prepared physical systems characterized by the same ket $\ket{\alpha}$ aka a **pure ensemble**
+		- ex. output through a Stern-Gerlach type measurement
+	- **Mixed ensembles** consist of certain fraction
 - Coupled and uncoupled states
 	- Coupled notation $$\hat{H_{1}} \otimes \hat{H}_{2}$$
 		- $$\ket{a,b} = \ket{a} \otimes \ket{b} $$
