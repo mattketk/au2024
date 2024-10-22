@@ -12,3 +12,4 @@
 - Coupled and uncoupled states
 	- Coupled notation $$\hat{H_{1}} \otimes \hat{H}_{2}$$
 		- $$\ket{a,b} = \ket{a} \otimes \ket{b} $$
+- Pure states lie on the Bloch sphere, while mixed states lie inside
