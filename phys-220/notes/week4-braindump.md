@@ -12,3 +12,4 @@
 	- 
 ## Other concepts
 - Generating functions
+- If the Hamiltonian is conserved, then a solution could be obtained by transforming to new canonical coordinates that are all cyclic, thereby providing new equations of motion with trivial solutions.
