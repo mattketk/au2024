@@ -11,4 +11,22 @@ Since $\sum_{i}\frac{ \partial v_{i} }{ \partial x_{i} } = 0$, the determinant o
 (b)
 ## Problem 2
 ## Problem 3
+(a) The Lagrangian of a charged particle with mass $m$ and charge $e$ within a magnetic field $\mathbf{B}$ has the form $$L = \frac{m\dot{\mathbf{x}}^2}{2} + e\mathbf{A} \cdot\dot{\mathbf{x}} = \frac{\left( \mathbf{p} - e\mathbf{A} \right) ^2}{2m} + e \mathbf{A} \cdot \mathbf{\dot{x}}$$
+The conjugate momentum of the particle is $$p_{i} = \frac{ \partial L }{ \partial \dot{x}_{i} } = m\dot{x}_{i} + eA_{i} $$
+Rearranging the above result, $$m\dot{x}_{i} = p_{i} - eA_{i}$$
+The Poisson bracket $\left\{ m\dot{x}_{i} , m \dot{x}_{j} \right\}$ evaluates to $$\begin{align}&=\sum_{k} \left[ \frac{ \partial (m\dot{x}_{i}) }{ \partial x_{k} } \frac{ \partial (m\dot{x}_{j}) }{ \partial p_{k} }    - \frac{ \partial (m\dot{x}_{i}) }{ \partial p_{k} } \frac{ \partial (m\dot{x}_{j}) }{ \partial x_{k} } \right] \\
+&=\sum_{k} \left[ \frac{ \partial (p_{i} - eA_{i}) }{ \partial x_{k} } \frac{ \partial (p_{j} - eA_{j})}{ \partial p_{k} }    - \frac{ \partial (p_{i}-eA_{i}) }{ \partial p_{k} } \frac{ \partial (p_{j}-eA_{j}) }{ \partial x_{k} } \right] \\
+&=\sum_{k} \left[ -e \frac{ \partial A_{i} }{ \partial x_{k} } \delta_{jk}- \left( -e \delta_{ik} \frac{ \partial A_{j} }{ \partial x_{k} }  \right)   \right] \\
+&=-e \sum_{k} \left[ \frac{ \partial A_{i} }{ \partial x_{j} }  - \frac{ \partial A_{j} }{ \partial x_{i} }  \right] = -e \epsilon_{ijk}B_{k}  \end{align}$$
+For $\left\{ m\dot{x}_{i}, x_{j} \right\}$, $$\sum_{k} \left[ \frac{\partial}{\partial x_{k}} \left( p_{i} - eA_{i} \right) \frac{\partial}{\partial p_{k}}x_{j} - \frac{\partial}{\partial p_{k}} \left( p_{i} - eA_{i} \right) \frac{\partial}{\partial x_{k}} x_{j} \right]$$
+The first term in the sum vanishes due to the partial derivative of $x_{j}$ with respect to $p_{k}$, leaving $$\sum_{k} \left[ - \frac{\partial}{\partial p_{k}} \left( p_{i} - eA_{i} \right) \frac{\partial}{\partial x_{k}} x_{j} \right] = \sum_{k} \left[ -\delta_{ik} \delta_{jk} \right] = -\delta_{ij}$$
+(b) The magnetic vector potential $A_{i}=0$ since the field is no longer divergenceless. Evaluating $\left\{ J,H \right\}$, $$ = \left\{ m\epsilon_{ijk}x_{i} \dot{x}_{j} - eg_{m} \hat{x}_{i}, \frac{m\dot{x}_{j}\dot{x}_{j}}{2} \right\} = \left\{ m\epsilon_{ijk}x_{i} \dot{x}_{j}, \frac{m\dot{x}_{j}\dot{x}_{j}}{2} \right\} - eg_{m} \left\{ \hat{x_{i}}, \frac{m\dot{x}_{j}\dot{x}_{j}}{2} \right\}  $$
+The partial derivatives of $\hat{x}_{i}$ with respect to canonical position and momentum are zero. While the momentum derivative may be apparent by inspection, the spatial derivative evaluates to $$\frac{\partial \left( \hat{x}_{i} \right) }{\partial x_{k}} = \frac{\partial}{\partial x_{k}} \left( \frac{x_{i}}{\sqrt{ x_{k}x_{k} }} \right) = \frac{\delta_{ik} \sqrt{ x_{k} x_{k} } - x_{i}}{x_{k} x_{k}} = \frac{x_{i} - x_{i}}{x_{k} x_{k}} = 0$$
+As a result, the second term's Poisson bracket is zero, leaving only the first term to be the only term. That bracket evaluates to $$\left\{ m \epsilon_{ijk} x_{i} \dot{x}_{j}, \frac{m\dot{x}_{j} \dot{x}_{j}}{2} \right\} = \sum_{k} \left( \frac{ \partial A }{ \partial x_{k} } \frac{ \partial B }{ \partial p_{k} }  - \frac{ \partial A }{ \partial p_{k} } \frac{ \partial B }{ \partial x_{k} }  \right)  $$
+The partial derivatives in the Poisson bracket evaluate to:
+- $$\frac{\partial A}{\partial x_{k}} = m \epsilon_{ijk}\delta_{ik}\dot{x}_{j}$$
+- $$\frac{ \partial A }{ \partial p_{k} } = \epsilon_{ijk} \delta_{jk} x_{i} $$
+These two partial derivatives evaluate to zero, so the sum must be zero for all $k$. Therefore $$\left\{ m \epsilon_{ijk} x_{i} \dot{x}_{j}, \frac{m\dot{x}_{j} \dot{x}_{j}}{2} \right\} = 0$$
 ## Problem 4
+
+
