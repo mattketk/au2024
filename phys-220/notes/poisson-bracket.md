@@ -6,5 +6,5 @@ $$\left[ A,B \right]_{(q,p)} = \sum_{i} \left(\frac{ \partial A }{ \partial q_{i
 	- $\left[ u, v \right]=-\left[ v,u \right]$
 - Linearity
 	- $\left[ au + bv, w \right] = a \left[ u, w \right] + b \left[ v, w \right]$
-- "Product rule" like
+- Leibniz's rule
 	- $\left[ uv, w \right]= \left[ u, w \right]v + u\left[ v, w \right]$

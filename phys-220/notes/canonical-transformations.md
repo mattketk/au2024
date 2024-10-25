@@ -9,7 +9,12 @@
 	- $\lambda$ is a constant independent of $Q,P,t$
 - **A canonical transformation is thus when** $\lambda=1$ $$p_{i} q_{i} - H = P_{i} \dot{Q}_{i} - K + \frac{dF}{dt}$$
 - *Restricted* canonical transformations have no explicit time dependence
-- 
+## Other Conditions for Canonical Transforms
+- Poisson Brackets
+	- The following must be satisfied for $Q(q,p), P(q,p)$
+		- $$\left\{ Q_{i}, P_{j} \right\} = \delta_{ij}$$ $$\left\{ Q_{i}, Q_{j} \right\} = 0$$ $$\left\{ P_{i}, P_{j} \right\} = 0$$
+- Matrix
+	- $$\mathbf{M} \mathbf{J} \mathbf{M}^T = \mathbf{J}$$
 ## Generating Functions
 - The $F$ in the canonical transformation equation
 	- Vanishes at the end points if $F$ is a function of $q,p,t$ or $Q,P,t$ or a mix

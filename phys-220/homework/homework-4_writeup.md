@@ -17,13 +17,19 @@ The symplectic matrix $\mathbf{J}$ takes on the following values $$J_{ij} = \beg
 \end{cases}$$
 This makes the sum over $i,j$ evaluate to $$- \frac{\partial^2 H}{\partial x_{n+k} \partial x_{k}} + \frac{\partial^2 H}{\partial x_{k} \partial_{n+k}} = 0$$ The derivatives commute, so the result is zero. Therefore, $v_{i}$ is divergenceless if Hamilton's equations hold.
 ## Problem 2
-(a) $$\left\{ L_{i}, K_{j} \right\} = \left\{ L_{i}, \frac{1}{m}\epsilon_{jkl}p_{k} L_{l} - \hat{r}_{j} \right\} = \frac{1}{m}\left\{ \epsilon_{jkl}p_{k} L_{l}  \right\} - \left\{ L_{i} , \hat{r}_{j} \right\}   $$
-Related partial derivatives
-$$\frac{ \partial L_{i} }{ \partial x_{n} } = \epsilon_{inm}p_{m} $$
-$$\frac{\partial}{\partial p_{n}} \left( \epsilon_{jkl}p_{k} L_{l} \right) = \epsilon_{jnl} L_{l }+x_{j}p_{n} - \delta_{jn}x_{k} p_{k}$$
-$$\frac{ \partial L_{i} }{ \partial p_{n} } = \epsilon_{i l n}x_{l} $$
-$$\frac{\partial}{\partial x_{n}} \left( \epsilon_{jkl} p_{k} L_{l} \right) = \delta_{jn} p_{k} p_{k} - p_{j} p_{n}$$
+(a) $$\left\{ L_{i}, K_{j} \right\} = \left\{ L_{i}, \frac{1}{m}\epsilon_{jkl}p_{k} L_{l} - \hat{r}_{j} \right\} = \frac{1}{m}\left\{L_{i, } \epsilon_{jkl}p_{k} L_{l}  \right\} - \left\{ L_{i} , \hat{r}_{j} \right\}   $$
+$$=\frac{\epsilon_{jkl}}{m} \left(\left\{ L_{i}, p_{k} \right\}L_{l} + p_{k} \left\{ L_{i}, L_{l} \right\} \right) - \left\{ L_{i}, \frac{q_{j}}{\sqrt{ q_{a} q_{a} }} \right\}  $$
+The individual brackets evaluate to
+- $$\left\{ L_{i}, p_{k} \right\} = \epsilon_{ilm} \left\{ q_{l} p_{m}, p_{k} \right\} = \epsilon_{ikm} p_{m}$$
+- $$\left\{ L_{i}, \frac{q_{j}}{\sqrt{ q_{a} q_{a} }} \right\} = \epsilon_{ilm} \left\{ q_{l} p_{m}, \frac{q_{j}}{\sqrt{ q_{a}q_{a} }}\right\} = \epsilon_{ilm} \frac{q_{l}}{\sqrt{ q_{a} q_{a} }} + \epsilon_{ilm} q_{l}q_{j} q_{m} \frac{1}{\left( q_{a}^2 \right) ^{3/2}} = \epsilon_{ilm} \frac{q_{l}}{\sqrt{ q_{a}q_{a} }}$$
+Continuing,
+$$\begin{align}\left\{ L_{i}, K_{j} \right\} &= \frac{\epsilon_{jkl}}{m} \left( \epsilon_{ikm} p_{m} L_{l} + \epsilon_{ilm} L_{m} p_{k} \right) +\epsilon_{ilm} \frac{q_{l}}{\sqrt{ q_{a}q_{a} }}  \\
+&=\frac{1}{m} \left(\left( \delta_{lm}\delta_{ij} - \delta_{il}\delta_{jm} \right) L_{l} p_{m} - \left( \delta_{ij} \delta_{km} - \delta_{jm} \delta_{ki} \right) L_{m} p_{k}  \right)+ \dots  \\
+&= \epsilon_{ijk} K_{k}
+\end{align}$$
+(b) 
 ## Problem 3
+
 (a) The Lagrangian of a charged particle with mass $m$ and charge $e$ within a magnetic field $\mathbf{B}$ has the form $$L = \frac{m\dot{\mathbf{x}}^2}{2} + e\mathbf{A} \cdot\dot{\mathbf{x}} = \frac{\left( \mathbf{p} - e\mathbf{A} \right) ^2}{2m} + e \mathbf{A} \cdot \mathbf{\dot{x}}$$
 The conjugate momentum of the particle is $$p_{i} = \frac{ \partial L }{ \partial \dot{x}_{i} } = m\dot{x}_{i} + eA_{i} $$
 Rearranging the above result, $$m\dot{x}_{i} = p_{i} - eA_{i}$$
@@ -42,5 +48,19 @@ The partial derivatives in the Poisson bracket evaluate to:
 These two partial derivatives evaluate to zero, so the sum must be zero for all $k$. Therefore $$\left\{ m \epsilon_{ijk} x_{i} \dot{x}_{j}, \frac{m\dot{x}_{j} \dot{x}_{j}}{2} \right\} = 0$$
 (c) Angular momentum is not conserved for the charge in the presence of a monopole magnetic field.
 ## Problem 4
-
-
+The following conditions must hold for a transformation to be canonical:
+- $$\left\{ Q_{i}, Q_{j} \right\} = 0$$
+- $$\left\{ P_{i}, P_{j} \right\} = 0$$
+- $$\left\{ Q_{i}, P_{j} \right\} = \delta_{ij}$$
+(a) The relevant partial derivatives for $P=\frac{1}{2} \left( p^2 + q^2 \right)$ and $Q = \arctan \left( \frac{q}{p} \right)$ $$\frac{ \partial Q_{i} }{ \partial q_{k}} = \delta_{ik} \frac{p_{i}}{q_{i}^2 + p_{i}^2} $$
+$$\frac{\partial P_{j}}{p_{k}} = \delta_{jk} p_{j}$$
+$$\frac{\partial Q_{i}}{\partial p_{k}} = -\delta_{ik} \frac{q_{i}}{q_{i}^2 + p_{i}^2}$$
+$$\frac{\partial P_{j}}{\partial q_{k}} = \delta_{jk} q_{j}$$
+Evaluating the Poisson bracket, $$\left\{ Q_{i}, P_{j} \right\} = \delta_{ij} \left( \frac{p_{i} p_{j}}{q_{i}^2 + p_{i}^2} + \frac{q_{i}q_{j}}{p_{i}^2 + q_{i}^2} \right)= \delta_{ij} $$
+(b) The relevant partial derivatives for $P=\frac{1}{q}$ and $Q=pq^{2}$ $$\frac{\partial Q_{i}}{\partial q_{k}} = 2p_{i} q_{i} \delta_{ik}$$
+$$\frac{\partial P_{j}}{\partial p_{k}} = 0$$
+$$\frac{\partial Q_{i}}{\partial p_{k}} = q_{i}^2 \delta_{ik}$$
+$$\frac{\partial P_{j}}{\partial q_{k}}= - \frac{\delta_{jk}}{q_{i}^2}$$
+$$\left\{ Q_{i}, P_{j} \right\} = \sum_{k} \left[ 0 + \delta_{ik} \delta_{jk} \frac{q_{i}^2}{q_{i}^2} \right] = \delta_{ij}$$
+(c) The relevant partial derivative for $P=\sqrt{q } \left( 1 + \sqrt{ q } \cos p \right)\sin p$ and $Q = \ln \left( 1+ \sqrt{ q } \cos p \right)$
+$$\left\{ Q_{i}, P_{j} \right\} = \frac{2 \sqrt{ q } \sin^2 p (1 + \sqrt{ q }\cos p) + 2 \sqrt{ q } \cos^2 p (1+ \sqrt{ q }\cos p)}{2 \sqrt{ q } (1+ \cos p)} \delta_{ij} = \delta _{ij}$$
