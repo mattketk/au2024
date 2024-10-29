@@ -4,7 +4,62 @@
 - Look at Heisenberg picture section in Sakurai
 - Heisenberg EoM $$\frac{dA^{(H)}}{dt}= \frac{1}{i\hbar} \left[ A^{(H)}, H \right] $$
 	- where $A^{(H)} = \mathcal{U}^{\dagger} (t) A^{(S)} \mathcal{U} (t)$ and $\mathcal{U} (t) = \exp \left( -\frac{iHt}{\hbar} \right)$
+The time evolution operators evaluate to $$\mathcal{U}(t) = \exp \left( -\frac{i\hat{H} t}{\hbar} \right) = \sum_{n=0}^\infty \left( -\frac{i\hbar \omega}{2\hbar} \right)^n \frac{1}{n!} \begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}^{n}= \begin{pmatrix}
+\exp \left( -\frac{i\omega t}{2} \right) & 0 \\
+0 & \exp \left( \frac{i\omega t}{2} \right) 
+\end{pmatrix} $$
+The operator is unitary, so that $$\mathcal{U}^{\dagger} (t) = \begin{pmatrix}
+\exp \left( \frac{i\omega t}{2} \right)  & 0 \\
+0 & \exp \left( -\frac{i\omega t}{2} \right)
+\end{pmatrix}$$
+As a shorthand, let $e-$ denote $\exp(-i \omega t /2)$ and $e+$ denote $\exp \left( i \omega t / 2 \right)$. 
+
+For $S_{z}^{(H)}$, $$S_{z}^{(H)} (t) = \frac{\hbar \omega}{2} \begin{pmatrix}
+e+ & 0 \\
+0 & e-
+\end{pmatrix} \begin{pmatrix}
+1 & 0  \\
+0 & -1
+\end{pmatrix} \begin{pmatrix}
+e- & 0 \\
+0 & e+
+\end{pmatrix}= \frac{\hbar \omega}{2} \begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix} = S_{z}^{(S)}$$
+Therefore, $S_{z}$ is time independent (under this Hamiltonian).
+
+For $S_{x}^{(H)}$, $$S_{x}^{(H)} (t) = \frac{\hbar \omega}{2} \begin{pmatrix}
+e+ & 0 \\
+0 & e-
+\end{pmatrix} \begin{pmatrix}
+0 & 1  \\
+1 & 0
+\end{pmatrix} \begin{pmatrix}
+e- & 0 \\
+0 & e+
+\end{pmatrix}= \frac{\hbar \omega}{2} \begin{pmatrix}
+0 & \exp \left( i\omega t \right)  \\
+\exp \left( -i \omega t \right) & 0
+\end{pmatrix}$$
+For $S_{z}^{(H)}$, $$S_{y}^{(H)} (t) = \frac{\hbar \omega}{2} \begin{pmatrix}
+e+ & 0 \\
+0 & e-
+\end{pmatrix} \begin{pmatrix}
+0 & -i  \\
+i & 0
+\end{pmatrix} \begin{pmatrix}
+e- & 0 \\
+0 & e+
+\end{pmatrix}= \frac{\hbar \omega}{2} \begin{pmatrix}
+0 & -i\exp \left( i\omega t \right)  \\
+i\exp \left( -i \omega t \right) & 0
+\end{pmatrix}$$
 ## Sakurai 2.3
+
 ## Sakurai 2.6
 ### Hints
 $$\left[ \left[ H, x \right], x \right] = \dots -\frac{1}{m} $$

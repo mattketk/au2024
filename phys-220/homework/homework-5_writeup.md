@@ -39,3 +39,5 @@ S &= W_{1} ( q_{1}) + W_{2} (q_{2}) - at  \\
 \end{align} $$
 - [ ] Take partial derivatives of $S$ to get EOMs
 # Problem 3
+(a) $$p = \frac{ \partial F(q,P) }{ \partial q } = \frac{\partial}{\partial q} \left( Pq \right) + \frac{\partial}{\partial q} \left( \epsilon S (P,q) \right) = P + \epsilon \frac{ \partial S }{ \partial q }  $$ We choose $\alpha = P$, so that $$Q=\frac{\partial F_{2}}{\partial \alpha} = \frac{\partial F_{2}}{\partial P}= q + \epsilon \frac{ \partial S }{ \partial P } $$
+(b) Rearranging one of the above relations to get $P = p-\epsilon \frac{\partial S}{\partial q}$ and taking derivatives with resp. to $\epsilon$, $$\left.\frac{dP}{d\epsilon}\right|_{\epsilon=0} = -\frac{ \partial S }{ \partial q }  = - \frac{ \partial H }{ \partial q } $$ $$\left.\frac{dQ}{d\epsilon}\right|_{\epsilon=0}= \frac{ \partial S }{ \partial p } = \frac{ \partial H }{ \partial p } $$
