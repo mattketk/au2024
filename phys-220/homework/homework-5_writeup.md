@@ -1,5 +1,32 @@
 # Physics 220 Homework 5
 ### Problem 1
+The generating function $F_{1} (q, Q, t)$ $$F_{1} (q,Q,t) = -\sqrt{ mk } \frac{Q}{q}$$
+(a) From the relation $$p = \frac{ \partial F_{1} }{ \partial q } = \sqrt{ mk } \frac{Q}{q^2}$$ we can invert it to get an expression for $Q(q,p)$, $$Q(q,p) = \frac{p^2q}{\sqrt{ mk }}$$
+whereas, for $P(q,p)$, $$P = -\frac{ \partial F_{1} }{ \partial Q } = -\frac{\sqrt{ mk }}{q} $$
+(b) Inverting $P,Q$ into $q(Q,P),p(Q,P)$, $$\begin{align}
+q(Q, P) = -\frac{\sqrt{ mk }}{P} \\
+p(Q,P) = \sqrt{ mk } \frac{Q}{\left( - \frac{\sqrt{ mk }}{P} \right) ^2} = \frac{QP^2}{\sqrt{ mk }}
+\end{align}$$
+the new Hamiltonian $H(P,Q)$ becomes $$\begin{align}
+H(q(P, Q), p(P,Q)) = H(Q,P) &= \frac{1}{2m} \left(  \frac{P^2Q}{\sqrt{ mk }} \right) ^2 \left( \frac{\sqrt{ mk }}{P} \right)^{4} + \frac{k}{2} \left( - \frac{P}{\sqrt{ mk }} \right) ^2 \\
+&= \frac{kQ^2}{2}+\frac{P^2}{2m}
+\end{align}$$
+(c) The transformed Hamiltonian has the form of a simple harmonic oscillator. This means that the solutions $Q(t),P(t)$ take the form $$\begin{align}
+Q(t)&=A\cos \left( \omega t \right) + B \sin \left( \omega t \right) \\
+P(t)=m\dot{Q}(t)&= m\omega \left( B\cos \left( \omega t \right) - A \sin \left( \omega t \right)  \right) 
+\end{align}$$
+(d) We can map $Q(t), P(t)$ back to the original coordinates $q(t), p(t)$ with the canonical transformations. Inverting, $$\begin{align}
+q(t)&=- \frac{\sqrt{ mk }}{P(t)}= -\frac{\sqrt{ mk }}{m\omega \left( B \cos \left( \omega t \right) - A \sin \left( \omega t \right)  \right) } \\
+p(t)&=\frac{Q(t) P(t)^2}{\sqrt{ mk }}=\frac{\left( m\omega \right) ^2 \left( A \cos \left( \omega t \right) + B \sin \left( \omega t \right)  \right) \left( B\cos \left( \omega t \right) - A \sin \left( \omega t \right)  \right) ^2}{\sqrt{ mk }}
+\end{align}$$
+Substituting the initial conditions $q(0)=q_{0}, p(0)=p_{0}$, we find the coefficients $A,B$$$\begin{align}
+q(0)=- \frac{\sqrt{ mk }}{m\omega B}=q_{0} \\
+p(0)=\frac{(m\omega)^2 AB^{2}}{\sqrt{ mk }} = p_{0}
+\end{align}$$
+Rearranging for $B$, $$B=-\frac{\sqrt{ mk }}{m\omega q_{0}}$$
+Rearranging for $A$, $$A = \frac{p_{0} \sqrt{ mk }}{\left( m\omega \right) ^2  B^2}= \frac{p_{0} \sqrt{ mk }}{\left( m\omega \right) ^2 \left( - \frac{\sqrt{ mk }}{m\omega q_{0}} \right) ^2}=\frac{p_{0} \sqrt{ mk }}{\left( m\omega \right) ^2 \left( \frac{mk}{\left( m\omega q_{0} \right) ^2} \right) }= \frac{p_{0} q^2}{\omega\sqrt{ mk }}$$
+
+
 ## Problem 2
 Elliptic coordinates transform $$\begin{align}
 x &= a \cosh \mu \cos \nu \\
@@ -24,20 +51,18 @@ $$K=H+\frac{ \partial F }{ \partial t } =0 \implies H(q_{1},q_{2}, P_{1}, P_{2},
 $$S(q,\alpha, t) = W(q, \alpha) - at$$
 $$p_{i} = \frac{\partial F_{2}}{\partial q_{}{i}} = \frac{\partial S}{\partial q_{i}} = \frac{\partial}{\partial q_{i}} \left( W(q, \alpha) - at \right) = \frac{\partial W}{\partial q_{i}} $$
 $$H + \frac{\partial S}{\partial t} = 0 \implies H + \frac{\partial}{\partial t} \left( W(q,\alpha) - at \right) =0 \implies H = \alpha$$
-$$H = \frac{1}{2mc} \left( \left( \frac{ \partial W }{ \partial q_{1} }  \right) ^2 + \left( \frac{ \partial W }{ \partial q_{2} }  \right) ^2 \right)  - \mu_{+} \left( \cosh q_{1} + \cos q_{2} \right) - \mu_{-} \left( \cosh q_{1} - \cos q_{2} \right) = \alpha \left( \cosh^2 q_{1} - \cos^2 q_{2} \right)   $$
+$$H = \frac{1}{2mc} \left( \left( \frac{ \partial W }{ \partial q_{1} }  \right) ^2 + \left( \frac{ \partial W }{ \partial q_{2} }  \right) ^2 \right)  - \mu_{+} \left( \cosh q_{1} + \cos q_{2} \right) - \mu_{-} \left( \cosh q_{1} - \cos q_{2} \right) = \alpha c \left( \cosh^2 q_{1} - \cos^2 q_{2} \right)   $$
 We guess that $W$ has the following form, to invoke separation of variables $$W = W_{1}(q_{1}) + W_{2} (q_{2})$$
 This yield two different differential equations:
 - $$\frac{1}{2mc} \left( \frac{ \partial W_{1} }{ \partial q_{1} }  \right) ^ 2 = \alpha \cosh^2q_{1} + \left( \mu_{+} + \mu_{-} \right) \cosh q_{1} $$
 - $$\frac{1}{2mc} \left( \frac{ \partial W_{2} }{ \partial q_{2} }  \right)^2 = -\alpha \cos^2 q_{2} - \left( \mu_{+} - \mu_{-} \right) \cos q_{2} $$
 Integrating with respect to $q_{1}, q_{2}$ in their respective equations, we get $$\begin{align}
-W_{1} &= 2mc \int \sqrt{ \alpha \cosh^2 q_{1} + \left( \mu_{+} + \mu_{-} \right) \cosh q_{1}} \, dq_{1}  \\
-W_{2} &= 2mc \int \sqrt{ -\alpha \cos^2 q_{2} - \left( \mu_{+} - \mu_{-} \right) \cos q_{2} } \, dq_{2} 
+W_{1}=\sqrt{ 2mc }\int \sqrt{ \mu_{+}\cosh q_{1} + \mu_{-}\cosh q_{1}+ \alpha c \cosh^2q_{1}}\, dq \\
+W_{2}=\sqrt{ 2mc }\int \sqrt{ \mu_{+}\cos q_{2} - \mu_{-}\cos q_{2}- \alpha c \cos^2q_{2}}\, dq
 \end{align}$$
-The form of the solution $S$ is then $$\begin{align}
-S &= W_{1} ( q_{1}) + W_{2} (q_{2}) - at  \\
-&= 2mc \left[ \int \sqrt{ \alpha \cosh^2 q_{1} + \left( \mu_{+} + \mu_{-} \right) \cosh q_{1}} \, dq_{1} + \int \sqrt{ -\alpha \cos^2 q_{2} + \left( \mu_{+} - \mu_{-} \right) \cos q_{2} } \, dq_{2} \right] - at
-\end{align} $$
-- [ ] Take partial derivatives of $S$ to get EOMs
+The form of the solution $S$ is then $$S = W_{1}(q_{1})+W_{2}(q_{2})-at$$
+Taking the partial derivatives, $$Q = \frac{\partial S}{\partial \alpha} = \sqrt{ 2mc } \frac{\partial }{\partial \alpha} \left(  W_{1}(q_{1})+W_{2}(q_{2})-at\right) $$
+$$p=\frac{ \partial S }{ \partial q } $$
 # Problem 3
 (a) $$p = \frac{ \partial F(q,P) }{ \partial q } = \frac{\partial}{\partial q} \left( Pq \right) + \frac{\partial}{\partial q} \left( \epsilon S (P,q) \right) = P + \epsilon \frac{ \partial S }{ \partial q }  $$ We choose $\alpha = P$, so that $$Q=\frac{\partial F_{2}}{\partial \alpha} = \frac{\partial F_{2}}{\partial P}= q + \epsilon \frac{ \partial S }{ \partial P } $$
 (b) Rearranging one of the above relations to get $P = p-\epsilon \frac{\partial S}{\partial q}$ and taking derivatives with resp. to $\epsilon$, $$\left.\frac{dP}{d\epsilon}\right|_{\epsilon=0} = -\frac{ \partial S }{ \partial q }  = - \frac{ \partial H }{ \partial q } $$ $$\left.\frac{dQ}{d\epsilon}\right|_{\epsilon=0}= \frac{ \partial S }{ \partial p } = \frac{ \partial H }{ \partial p } $$
