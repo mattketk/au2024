@@ -10,3 +10,9 @@
 \bra{m} aa^{\dagger} \ket{n} &= (n+1)\delta_{mn} \\
 \bra{m} a^{\dagger}a \ket{n} &= n\delta_{mn}   
 \end{align}$$
+## Delta Function Potential Well
+- Only potential well with one bound state AND one scattering state $$V(x, x') = -V_{0}\delta(x-x')$$
+- Wave function (for $x'=0$) $$$\psi(x)=\begin{cases}
+\sqrt{ \kappa } \exp(\kappa x) \, x<0 \\ \\
+\sqrt{ \kappa } \exp(-\kappa x) \, x>0
+\end{cases}$$ where $\kappa\equiv mV_{0} / \hbar^2$
