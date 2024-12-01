@@ -16,3 +16,10 @@
 \sqrt{ \kappa } \exp(\kappa x) \, x<0 \\ \\
 \sqrt{ \kappa } \exp(-\kappa x) \, x>0
 \end{cases}$$ where $\kappa\equiv mV_{0} / \hbar^2$
+## Angular Momentum Operators
+$$\begin{align}
+\mathbf{J}^2 \ket{j,m} &= \hbar^2 j(j+1) \ket{j,m} \\
+J_{z} \ket{j,m} &= \hbar m \ket{j,m} \\
+J_{\pm} \ket{j,m} &= \sqrt{ (j \mp m) (j \pm m + 1) } \hbar \ket{j,m\pm 1} 
+\end{align}$$
+- Ladder operators
