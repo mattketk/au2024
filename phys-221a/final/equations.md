@@ -1,4 +1,17 @@
 # Final Equations to put on equation sheet
+Checklist:
+- [ ] WKB approximation
+- [ ] Feynman path integrals and propagators
+- [ ] Radial wave function
+- [ ] Spherical harmonics
+	- [ ] Legendre polynomials
+	- [ ] Spherical coordinate vector derivatives
+	- [ ] 
+- [x] Algebra for creation and annihilation
+- [ ] Angular momentum addition
+	- [ ] spin and orbital interactions $H=L\cdot S$
+- [ ] Heisenberg vs. Schrodinger pictures
+	- [ ] Time evolution
 ## Creation and annihilation
 - Creation $\hat{a}_{-}=\hat{a} = \sqrt{ \frac{m\omega}{2\hbar} } \left( \hat{x} - \frac{i\hat{p}}{m\omega} \right)$
 - Annihilation $\hat{a}_{+} = \hat{a}^{\dagger} = \sqrt{ \frac{m\omega}{2\hbar} } \left( \hat{x} + \frac{i\hat{p}}{m\omega} \right)$
